@@ -1,0 +1,312 @@
+
+:root{
+   --degradado_1: linear-gradient(50deg, white, rgb(39, 173, 39));
+   --cajas_texto: linear-gradient(700deg, rgba(16, 80, 22, 0.801), rgba(80, 77, 77, 0.7));
+   --no_color: rgba(255, 255, 255, 0);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset:0;
+    background-image: url(fondo\ principal.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+}
+
+h1{
+    z-index: 2;
+    background:var(degradado-1);
+    padding: 5px;
+    border-radius: 10px;
+}
+h2{
+    background:rgba(248, 247, 247, 0.658);
+    width:180px;
+    border-radius: 20px;
+    padding: 5px;
+}
+h3{
+    position: relative;
+    top:auto;
+    left: 100px;
+    color: white;
+    width: 200px;
+}
+p{
+    color: white;
+    padding: 5px;
+}
+ol{
+    color:white
+}
+a {
+    text-decoration: none;
+    color: white;
+    background: var(--degradado_1);
+    padding: 15px;
+}
+a:hover {
+    background: var(--cajas_texto);
+    margin :2px;
+}
+.encabezado{
+    position: relative;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.encabezado::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(fondo\ de\ encabezado.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.barra{
+    background:var(--degradado_1);
+    position: absolute;
+    border-radius: 50px;
+    left: 0px ;
+    top: 265px ;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.barra-boton-gustos{
+    background: var(--no_color) ;
+    position: absolute;
+    left: 93.5%;
+    width: 70px;
+    height: 46px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+
+}
+.barra-boton-gustos:hover{
+    background:rgb(223, 221, 221);
+}
+.barra-boton-historia{
+    padding: 2px;
+    background: var(--no_color) ;
+    position: absolute;
+    left: 89%;
+    width: 70px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+.barra-boton-historia:hover{
+    background:rgb(223, 221, 221);
+}
+.barra-boton-imagenes{
+    padding: 2px;
+    position: absolute;
+     background: var(--no_color) ;
+    left: 84%;
+    width: 75px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+
+}
+.barra-boton-imagenes:hover{
+    background:rgb(223, 221, 221);
+}
+
+section{
+    padding: 5px;
+    justify-content: center;
+    margin: auto;
+    border-radius: 20px;
+    align-items: center;
+    width: 65%;
+    background:var(--cajas_texto);
+}
+
+.soy {
+    padding: 5px;
+    position:absolute;
+    margin: auto;
+    top: 320px;
+    left: 10px;
+    height:auto;
+
+}
+
+.gustos{
+    padding:5px;
+    position:absolute;
+    margin: auto;
+    top: 630px;
+    left:10px;
+    height: auto;
+}
+
+.musica {
+    width: 250px;
+}
+
+.musica img {
+    width: 200px;
+    height: 245px;
+    object-fit: cover;
+    display: block;
+    border-radius: 25px;
+}
+
+.musica audio {
+    position: absolute;
+    top:420px ;
+    width: 200px;
+}
+
+.musica2 {
+    width: 200px;
+    position: absolute;
+    top: 230px;
+    left: 220px;
+}
+
+.musica2 img {
+    width: 200px;
+    height: 245px;
+    object-fit: cover;
+    display: block;
+    border-radius: 25px;
+}
+
+.musica2 audio {
+    position: absolute;
+    top:78% ;
+    width: 200px;
+}
+
+.terraria {
+    position: absolute;
+    left: 450px;
+    top: 230px;
+    width: 200px;
+    height: 245px;
+    object-fit: cover;
+    display: block;
+    border-radius: 25px;
+}
+
+.caballero {
+    position: absolute;
+    left: 670px;
+    top: 230px;
+    width: 200px;
+    height: 245px;
+    object-fit: cover;
+    display: block;
+    border-radius: 25px;
+}
+
+.redes {
+    position: absolute;
+    top: 320px;
+    left: 1100px;
+    width: 470px;
+    height: 270px;
+    background:linear-gradient(
+        700deg, rgb(15, 15, 15), rgb(70, 69, 69, 0.7)
+    );
+    margin: auto;
+    border-radius: 30px;
+}
+
+.ig_logo{
+    position: absolute;
+    left:25px ;
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+}
+
+.tiktok_logo {
+    position: absolute;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+ .redes-caja {
+    width: 300px;
+    height: 279.9px;
+    position: absolute;
+    background:var(--degradado_1);
+    left: 180px;
+    top: 0px;
+    border-radius: 30px;
+ }
+.redes-caja-perfil1{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border-style:double;
+    border-color: black;
+}
+.redes-caja-texto{
+    color:black;
+    position: absolute;
+    left:150px ;
+    top:20px ;
+    width: 120px;
+    height:300px ;
+}
+.pruebas {
+    background:var(--cajas_texto);
+    border-radius: 20px;
+    padding: 5px;
+    position: relative;
+    left: 1090px;
+    top: 370px;
+    width: 465px;
+    height: 400px;
+}
+
+.footer{
+    position: absolute;
+    background:var(--degradado_1);
+    width: 100%;
+    height: 100px;
+    left: 0;
+    top: 1200px;
+}
